@@ -1,7 +1,7 @@
 // Carrito de Compras
 
 const Carrito = document.getElementById('carrito');
-const Elementos = document.getElementById('lista-1');
+const Elementos = document.getElementById('productos');
 const lista = document.querySelector('#lista-carrito tboby');
 const vaciarCarritoBtn = document.getElementById('vaciar-carrito');
 
