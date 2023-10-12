@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta  http-equiv="X-UA-Compatible" content="IE=edge" >
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Productos de la tienda Sport Zone</title>
+
+    <link rel="stylesheet" href="styleProductos.css">
+    <link rel="icon" href="IMG/ico.png">
+
+</head>
+
+
+<body>
+    
+
+   <div class="container-title">
+     <h1>Camiseta Selección Perú </h1>
+   </div>
+
+   <main>
+    <div class="container-img">
+        <img src="IMG/pic5.png" alt="imagen-producto">
+    </div>
+
+    <div class="container-info-product">
+        <div class="container-price">
+            <span>S/ 200.00</span>
+            <i class="fa-solid fa-caret-right"></i>
+        </div>
+
+        
+
+        <div class="container-add-cart">
+            <div class="container-quantity">
+
+                <input type="number" 
+                    placeholder="1" 
+                    value="1" 
+                    min="1" 
+                    class="input-quantity"
+                />
+ 
+                <div class="btn-increment-decrement">
+                    <i class="fa-solid fa-chevron-up" id="increment"></i>
+                    <i class="fa-solid fa-chevron-down" id="decrement"></i>
+                </div>
+
+            </div>
+            <button class="btn-add-to-cart">
+                <i class="fa-solid fa-plus"></i>
+                 Añadir al carrito
+            </button>
+        </div>
+
+        <div class="container-description">
+            <div class="title-description">
+                <h4>Descripción</h4>
+                <i class="fa-solid fa-chevron-down"></i>
+            </div>
+            <div class="text-description ">
+                <p>Adidas es la nueva marca oficial de la Rojiblanca.Se compone de una camisa blanca con una 
+                    banda diagonal roja más el escudo de la FPF con un acabado clasico. Creada usando tejidos 
+                    compuestos de materiales reciclados con la tecnología de absorción AEROREADY.</p>
+            </div>
+        </div>
+
+        <div class="container-additional-information">
+            <div class="title-additional-information">
+                <h4>Información adicional</h4>
+                <i class="fa-solid fa-chevron-down"></i>
+            </div>
+            <div class="text-additional-information ">
+                <p>Las camisetas originales también tienen las costuras bien alineadas. Además en la parte 
+                    interna de la camiseta se encuentra una etiqueta donde aparece un código del fabricante 
+                    donde se permitirá saber dónde se fabricó.</p>
+            </div>
+        </div>
+        
+
+        <div class="container-social">
+            <span>Compartir</span>
+            <div class="container-buttons-social">
+                <a href="https://www.facebook.com/sportzone.pe/?locale=es_LA"><i class="fa-brands fa-facebook"></i></a>
+                <a href="https://twitter.com/sportzonept"><i class="fa-brands fa-twitter"></i></a>
+                <a href="https://www.instagram.com/sportzonept/"><i class="fa-brands fa-instagram"></i></a>
+
+            </div>
+        </div>
+    </div>
+   </main>
+
+   <section class="container-related-products">
+        <h2>Productos Relacionados</h2>
+        <div class="card-list-products">
+            <div class="card">
+                <div class="card-img">
+                    <img src="IMG/pic1.png" alt="producto-1">
+                </div>
+                <div class="info-card">
+                    <div class="text-product">
+                        <a class=".text-product h3" onclick="seleccionar()" href="producto1.html">
+                            <h3>Balón Mundial Qatar</h3></a>
+                        
+                        <p class="category">
+                            Mundial de Fútbol de 2022
+                        </p>
+                    </div>
+                    <div class="price">S/ 70.00</div>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="card-img">
+                    <img src="IMG/pic2.png" alt="producto-2">
+                </div>
+                <div class="info-card">
+                    <div class="text-product">
+                        <a class=".text-product h3" onclick="seleccionar()" href="producto2.html">
+                            <h3>Balón UEFA Champions League</h3></a>
+                        
+                        <p class="category">
+                            Profesional, Champions League
+                        </p>
+                    </div>
+                    <div class="price">S/ 110.00</div>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="card-img">
+                    <img src="IMG/pic3.png" alt="producto-3">
+                </div>
+                <div class="info-card">
+                    <div class="text-product">
+                        <a class=".text-product h3" onclick="seleccionar()" href="producto3.html">
+                            <h3>Zapatillas Nike Phantom</h3></a>
+                        
+                        <p class="category">
+                            Profesional, zapatillas deportivas
+                        </p>
+                    </div>
+                    <div class="price">S/ 450.00</div>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="card-img">
+                    <img src="IMG/pic4.png" alt="producto-4">
+                </div>
+                <div class="info-card">
+                    <div class="text-product">
+                        <a class=".text-product h3" onclick="seleccionar()" href="producto4.html">
+                            <h3>Zapatillas Adidas Predator Accurac</h3></a>
+                        <p class="category">
+                            Profesional, zapatillas deportivas
+                        </p>
+                    </div>
+                    <div class="price">S/ 450.00</div>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="card-img">
+                    <img src="IMG/pic6.png" alt="producto-5">
+                </div>
+                <div class="info-card">
+                    <div class="text-product">
+                        <a class=".text-product h3" onclick="seleccionar()" href="producto6.html">
+                            <h3>Camiseta Selección Argentina</h3></a>
+                        
+                        <p class="category">
+                            100% algodon, buen material
+                        </p>
+                    </div>
+                    <div class="price">S/ 180.00</div>
+                </div>
+            </div>
+
+           
+        </div>
+
+   </section>
+
+
+
+   <script src="https://kit.fontawesome.com/9a97207cc1.js" crossorigin="anonymous"></script>
+   <script src="producto.js"></script>
+
+
+</body>
+
+</html>

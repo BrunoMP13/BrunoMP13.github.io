@@ -1,0 +1,356 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+        integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="IMG/ico.png">
+    <title>SPORT ZONE</title>
+</head>
+
+<body>
+    <!-- MENU -->
+    <div class="contenedor-header">
+        <header>
+            <h1>SPORT <span class="txtBlack"> ZONE</span></h1>
+            <nav id="nav">
+                <a href="#inicio" onclick="seleccionar()">inicio</a>
+                <a href="#nosotros" onclick="seleccionar()">nosotros</a>
+                <a href="#productos" onclick="seleccionar()">productos</a>
+                <a href="#marcas" onclick="seleccionar()">marcas</a>
+                <a href="#registro" onclick="seleccionar()">registro</a>
+                <a href="#contacto" onclick="seleccionar()">contacto</a>
+            </nav>
+
+            <div class="submenu">
+                <img src="IMG/Compras.png" id="img-carrito" alt="">
+                <div id="carrito">
+                    <table id="lista-carrito">
+                        <thead>
+                            <tr>
+                                <th>Imagen</th>
+                                <th>Nombre</th>
+                                <th>Precio</th>
+                                <th></th>
+                            </tr>
+                        </thead>
+                        <tbody></tbody>
+                    </table>
+                    <a href="#" id="vaciar-carrito" class="btn-1">Vaciar Carrito</a>
+                </div>
+            </div>
+
+
+            <div class="redes">
+                <a href="https://www.facebook.com/sportzone.pe/?locale=es_LA"><i
+                        class="fa-brands fa-facebook-f"></i></a>
+                <a href="https://twitter.com/sportzonept"><i class="fa-brands fa-twitter"></i></a>
+                <a href="https://www.instagram.com/sportzonept/"><i class="fa-brands fa-square-instagram"></i></a>
+            </div>
+            <!-- Icono del menu -->
+            <div id="icono-nav" class="nav-responsive" onclick="mostrarOcultarMenu()">
+                <i class="fa-solid fa-bars"></i>
+            </div>
+        </header>
+    </div>
+
+    <!-- SECCION INICIO -->
+    <section id="inicio" class="inicio">
+        <div class="contenido-seccion">
+            <div class="info">
+                <h2>TÚ TIENDA FAVORITA <span class="txtRojo">DE DEPORTES</span></h2>
+                <a href="#nosotros" class="btn-mas">
+                    <i class="fa-solid fa-circle-chevron-down"></i>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECCION NOSOTROS -->
+    <section id="nosotros" class="nosotros">
+        <div class="carrousel">
+            <div class="conteCarrousel">
+                <div class="itemCarrousel" id="itemCarrousel-1">
+                    <div class="itemCarrouselTarjeta">
+                        <img src="IMG/SPORTZONE1.png">
+                    </div>
+                    <div class="itemCarrouselArrows">
+                        <a href="#itemCarrousel-3">
+                            <i class="fas fa-chevron-left"></i>
+                        </a>
+                        <a href="#itemCarrousel-2">
+                            <i class="fas fa-chevron-right"></i>
+                        </a>
+                    </div>
+                </div>
+                <div class="itemCarrousel" id="itemCarrousel-2">
+                    <div class="itemCarrouselTarjeta">
+                        <img src="IMG/SPORTZONE2.png">
+                    </div>
+                    <div class="itemCarrouselArrows">
+                        <a href="#itemCarrousel-1">
+                            <i class="fas fa-chevron-left"></i>
+                        </a>
+                        <a href="#itemCarrousel-3">
+                            <i class="fas fa-chevron-right"></i>
+                        </a>
+                    </div>
+                </div>
+                <div class="itemCarrousel" id="itemCarrousel-3">
+                    <div class="itemCarrouselTarjeta">
+                        <img src="IMG/SPORTZONE3.png">
+                    </div>
+                    <div class="itemCarrouselArrows">
+                        <a href="#itemCarrousel-2">
+                            <i class="fas fa-chevron-left"></i>
+                        </a>
+                        <a href="#itemCarrousel-1">
+                            <i class="fas fa-chevron-right"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECCION PRODUCTOS -->
+    <section class="productos" id="productos">
+        <h2>PRODUCTOS</h2>
+
+        <div class="categories">
+            <div class="categorie">
+                <div class="categorie-1">
+
+                    <h3>Balón Mundial Qatar</h3>
+                    <div class="prices">
+                        <p class="price-1">S/.70</p>
+                        <p class="price-2">¡El balón del mundial!</p>
+                    </div>
+                    <a href="#" class="agregar-carrito btn-1" data-id="1">Agregar al carrito</a>
+                </div>
+                <div class="categorie-img">
+                    <a class="categorie-img" onclick="seleccionar()" href="producto1.html" target="_blank"> <img
+                            src="IMG/pic1.png" alt=""> </a>
+                </div>
+
+            </div>
+
+            <div class="categorie">
+                <div class="categorie-1">
+                    <h3>Balón UEFA Champions League</h3>
+                    <div class="prices">
+                        <p class="price-1">S/.110</p>
+                        <p class="price-2">¡Vive la fiebre de la UEFA!</p>
+                    </div>
+                    <a href="#" class="agregar-carrito btn-1" data-id="2">Agregar al carrito</a>
+                </div>
+                <div class="categorie-img">
+                    <a class="categorie-img" onclick="seleccionar()" href="producto2.html" target="_blank"> <img
+                            src="IMG/pic2.png" alt=""> </a>
+                </div>
+            </div>
+
+            <div class="categorie">
+                <div class="categorie-1">
+                    <h3>Zapatillas Nike Phantom</h3>
+                    <div class="prices">
+                        <p class="price-1">S/.430</p>
+                        <p class="price-2">¡Que esperas para ser Nike!</p>
+                    </div>
+                    <a href="#" class="agregar-carrito btn-1" data-id="">Agregar al carrito</a>
+                </div>
+                <div class="categorie-img">
+                    <a class="categorie-img" onclick="seleccionar()" href="producto3.html" target="_blank"><img
+                            src="IMG/pic3.png" alt=""></a>
+                </div>
+            </div>
+
+            <div class="categorie">
+                <div class="categorie-1">
+                    <h3>Zapatillas Adidas Predator Accuracy</h3>
+                    <div class="prices">
+                        <p class="price-1">S/.450</p>
+                        <p class="price-2">¡Que esperas para ser Adidas!</p>
+                    </div>
+                    <a href="#" class="agregar-carrito btn-1" data-id="1">Agregar al carrito</a>
+                </div>
+                <div class="categorie-img">
+                    <a class="categorie-img" onclick="seleccionar()" href="producto4.html" target="_blank"><img
+                            src="IMG/pic4.png" alt=""></a>
+                </div>
+            </div>
+
+            <div class="categorie">
+                <div class="categorie-1">
+                    <h3>Camiseta Selección Perú</h3>
+                    <div class="prices">
+                        <p class="price-1">S/.180</p>
+                        <p class="price-2">¡Alienta a la Blanquiroja!</p>
+                    </div>
+                    <a href="#" class="agregar-carrito btn-1" data-id="1">Agregar al carrito</a>
+                </div>
+                <div class="categorie-img">
+                    <a class="categorie-img" onclick="seleccionar()" href="producto5.html" target="_blank"><img
+                            src="IMG/pic5.png" alt=""></a>
+                </div>
+            </div>
+
+            <div class="categorie">
+                <div class="categorie-1">
+                    <h3>Camiseta Selección Argentina</h3>
+                    <div class="prices">
+                        <p class="price-1">S/.220</p>
+                        <p class="price-2">¡Alienta a la Albiceleste!</p>
+                    </div>
+                    <a href="#" class="agregar-carrito btn-1" data-id="1">Agregar al carrito</a>
+                </div>
+                <div class="categorie-img">
+                    <a class="categorie-img" onclick="seleccionar()" href="producto6.html" target="_blank"><img
+                            src="IMG/pic6.png" alt=""></a>
+                </div>
+            </div>
+
+        </div>
+
+    </section>
+
+
+
+    <!-- SECCION MARCAS -->
+    <section class="marcas" id="marcas">
+        <div class="contenido-seccion">
+            <div class="contenedor-titulo">
+                <div class="info">
+                    <h2>MARCAS</h2>
+                </div>
+            </div>
+            <div class="fila">
+                <div class="col">
+                    <img src="IMG/IMG1.png" alt="">
+                </div>
+                <div class="col">
+                    <img src="IMG/IMG2.png" alt="">
+                </div>
+                <div class="col">
+                    <img src="IMG/IMG3.png" alt="">
+                </div>
+            </div>
+            <div class="fila">
+                <div class="col">
+                    <img src="IMG/IMG4.png" alt="">
+                </div>
+                <div class="col">
+                    <img src="IMG/IMG5.png" alt="">
+                </div>
+                <div class="col">
+                    <img src="IMG/IMG6.png" alt="">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECCION REGISTRO -->
+    <section class="registro" id="registro">
+        <div class="contenido-seccion">
+            <div class="contenedor-titulo">
+                <div class="info">
+                    <h2>REGISTRO</h2>
+                </div>
+            </div>
+            <hr>
+            <div class="form-content">
+                <h3>COMPLETE SUS DATOS</h3>
+
+                <form action="https://formsubmit.co/brunomarcapardo@gmail.com" method="POST">
+                    <label for="name"></label>
+                    <input type="text" name="name" required="Requerido" placeholder="Nombre" id="name">
+
+                    <label for="password"></label>
+                    <input type="password" name="password" required="Requerido" placeholder="Contraseña" id="password">
+
+                    <label for="email"></label>
+                    <input type="email" name="email" required="Requerido" placeholder="Email" id="email">
+
+                    <label for="subject"></label>
+                    <input type="subject" name="subject" required="Requerido" placeholder="Teléfono" id="subject">
+
+                    <input class="btn" type="submit" value="Registrar">
+                    <input type="hidden" name="_name" value="http://sport-zone.com/">
+                    <input type="hidden" name="_captcha" value="false">
+
+                </form>
+            </div>
+        </div>
+        <p style="text-align: center">Al registrarte, aceptas nuestras Condiciones de uso y Política de privacidad.</p>
+        <p style="text-align: center">¿Ya tienes una cuenta? Haz click en:<a style="color: #11315f;"
+                href="loginvista.html"> Iniciar Sesión</a></p>
+    </section>
+
+    <!-- SECCION CONTACTO -->
+    <section class="contacto" id="contacto">
+        <div class="contenido-seccion">
+            <div class="contenedor-titulo">
+                <div class="info">
+                    <h2>CONTACTO</h2>
+                </div>
+            </div>
+            <div class="mapa">
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d31215.358051638552!2d-77.027553!3d-12.049042!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9105c9a405e7484f%3A0xb57dd430b1f6d73c!2sZONE%20SPORT!5e0!3m2!1ses-419!2spe!4v1696798669590!5m2!1ses-419!2spe"
+                    width="100%" height="600" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false"
+                    tabindex="0" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+                </iframe>
+            </div>
+            <div class="fila-datos">
+                <div class="col">
+                    <i class="fa-solid fa-location-dot"></i>
+                    Avenida Morro #255
+                </div>
+                <div class="col">
+                    <i class="fa-solid fa-phone"></i>
+                    (+51) - 989 254 010
+                </div>
+                <div class="col">
+                    <i class="fa-regular fa-clock"></i>
+                    Lunes a Domingo: 9:00h - 20:00h
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+    <footer>
+        <div class="info">
+            <p>2023 - <span class="txtRojo">SPORT ZONE</span></p>
+            <div class="redes">
+                <a href="https://www.facebook.com/sportzone.pe/?locale=es_LA">
+                    <i class="fa-brands fa-facebook-f"></i>
+                </a>
+                <a href="https://twitter.com/sportzonept">
+                    <i class="fa-brands fa-twitter"></i>
+                </a>
+                <a href="https://www.instagram.com/sportzonept/">
+                    <i class="fa-brands fa-instagram"></i>
+                </a>
+                <a href="https://youtube.com/@SportsZonez?si=yOffCMZCKZ_xKKuy">
+                    <i class="fa-brands fa-youtube"></i>
+                </a>
+            </div>
+        </div>
+    </footer>
+    <div class="go-top-container">
+        <div class="go-top-button">
+            <i class="fas fa-chevron-up"> </i>
+        </div>
+    </div>
+    <script src="app.js"></script>
+    <script src="cart.js"></script>
+    <script src="gotop.js"></script>
+</body>
+
+</html>
